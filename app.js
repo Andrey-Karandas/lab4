@@ -11,6 +11,9 @@ class Calculator {
   static division(numOne, numTwo) {
     return numOne / numTwo
   }
+  static pow(number, pow) {
+    return number ** pow
+  }
 }
 
 module.exports = Calculator
