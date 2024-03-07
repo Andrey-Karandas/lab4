@@ -5,6 +5,9 @@ class Calculator {
   static subtraction(numOne, numTwo) {
     return numOne - numTwo
   }
+  static multiplication(numOne, numTwo) {
+    return numOne * numTwo
+  }
 }
 
 module.exports = Calculator
