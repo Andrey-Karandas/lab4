@@ -23,6 +23,17 @@ class Calculator {
     }
     return 1
   }
+  static HCK(numOne, numTwo) {
+    let maxNum = Math.max(numOne, numTwo)
+    let minNum = Math.min(numOne, numTwo)
+    let lcm = maxNum
+    while (true) {
+      if (lcm % minNum === 0 && lcm % maxNum === 0) {
+        return lcm
+      }
+      lcm += maxNum
+    }
+  }
 }
 
 module.exports = Calculator
