@@ -8,6 +8,9 @@ class Calculator {
   static multiplication(numOne, numTwo) {
     return numOne * numTwo
   }
+  static division(numOne, numTwo) {
+    return numOne / numTwo
+  }
 }
 
 module.exports = Calculator
