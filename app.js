@@ -14,6 +14,7 @@ class Calculator {
   static pow(number, pow) {
     return number ** pow
   }
+  static number = 1
 }
 
 module.exports = Calculator
