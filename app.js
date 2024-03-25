@@ -1,4 +1,5 @@
 class Calculator {
+  //Karandas
   static add(numOne, numTwo) {
     return numOne + numTwo
   }
