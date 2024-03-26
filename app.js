@@ -1,5 +1,4 @@
 class Calculator {
-  //Karandas
   static add(numOne, numTwo) {
     return numOne + numTwo
   }
@@ -10,10 +9,28 @@ class Calculator {
     return numOne * numTwo
   }
   static division(numOne, numTwo) {
-    return numOne / numTwo
+    const result = numOne / numTwo
+
+    if (result === Infinity) {
+      try {
+        throw new Error('Ділення на нуль')
+      } catch (error) {
+        return error.message
+      }
+    }
+    return result
   }
   static pow(number, pow) {
-    return number ** pow
+    const result = number ** pow
+
+    if (result === 1) {
+      try {
+        throw new Error('Невизначене значення')
+      } catch (error) {
+        return error.message
+      }
+    }
+    return result
   }
   static HCD(numOne, numTwo) {
     let minNum = Math.min(numOne, numTwo)
